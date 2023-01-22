@@ -10,7 +10,7 @@
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link-img" href="index.html">
-            <img src="#" alt="Главная страница">
+            <span class="visually-hidden">Главная страница</span>
           </a>
         </li>
         <li>
@@ -137,16 +137,88 @@
       <a class="button" href="#">
         <span class="visually-hidden">Показать списком</span>
       </a>
-      <div class="result-card">
+      <ul class="result-card-list">
+      <li class="result-card-item">
         <a class="result-card-link" href="#">
-        <img class="result-card-img" src="#" alt="Amara Resort & Spa">
         <h3 class="result-card-title">Amara Resort & Spa</h3>
+        <img class="result-card-img" src="#" alt="Amara Resort & Spa">
       </a>
         <p class="result-card-type">Гостиница</p>
         <p class="result-card-price">От 4000 ₽</p>
-      </div>
+        <a class="button" href="#">Подробнее</a>
+        <a class="button" href="#">В избранное</a>
+        <p class="result-card-star">Четыре звезды</p>
+        <p class="result-card-rate">Рейтинг: 8,5</p>
+      </li>
+      <li class="result-card-item">
+        <a class="result-card-link" href="#">
+        <h3 class="result-card-title">Villas at Poco Diablo</h3>
+        <img class="result-card-img" src="#" alt="Villas at Poco Diablo">
+      </a>
+        <p class="result-card-type">Гостиница</p>
+        <p class="result-card-price">От 5000 ₽</p>
+        <a class="button" href="#">Подробнее</a>
+        <a class="button" href="#">В избранное</a>
+        <p class="result-card-star">Четыре звезды</p>
+        <p class="result-card-rate">Рейтинг: 9,2</p>
+      </li>
+      <li class="result-card-item">
+        <a class="result-card-link" href="#">
+        <h3 class="result-card-title">Desert Quail Inn</h3>
+        <img class="result-card-img" src="#" alt="Desert Quail Inn">
+      </a>
+        <p class="result-card-type">Гостиница</p>
+        <p class="result-card-price">От 2500 ₽</p>
+        <a class="button" href="#">Подробнее</a>
+        <a class="button" href="#">В избранное</a>
+        <p class="result-card-star">Три звезды</p>
+        <p class="result-card-rate">Рейтинг: 6,9</p>
+      </li>
+      <li class="result-card-item">
+        <a class="result-card-link" href="#">
+        <h3 class="result-card-title">GreenTree Inn</h3>
+        <img class="result-card-img" src="#" alt="GreenTree Inn">
+      </a>
+        <p class="result-card-type">Гостиница</p>
+        <p class="result-card-price">От 1500 ₽</p>
+        <a class="button" href="#">Подробнее</a>
+        <a class="button" href="#">В избранное</a>
+        <p class="result-card-star">Две звезды</p>
+        <p class="result-card-rate">Рейтинг: 5,0</p>
+      </li>
+    </ul>
+    <ul class="pagination">
+      <li class="pagination-item">
+        <a class="pagination-link pagination-current">1</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">2</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">3</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">4</a>
+      </li>
+      <li class="pagination-item">
+        <span class="pagination-link" href="#">...</span>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">10</a>
+      </li>
+    </ul>
     </section>
-
+    <section class="subscription">
+      <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+          <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="subscription-form-email">
+            <label class="visually-hidden" for="email">Ваша электронная почта</label>
+            <input type="text" id="email" placeholder="Ваш e-mail">
+            <button class="button" type="submit">Записаться</button>
+          </p>
+          </form>
+    </section>
   </main>
   <footer class="page-footer">
     <section class="footer-social">
