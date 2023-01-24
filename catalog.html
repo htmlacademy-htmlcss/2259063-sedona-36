@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Седона - каталог</title>
 </head>
-<body bgcolor="#ffffff">
+<body>
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-link-img" href="index.html">
@@ -109,13 +109,11 @@
           <label class="control" for="max">
             <input class="control-input" type="text" name="max" id="max" value="9000" placeholder="до">
           </label>
-          <label class="control" for="slider">
             <div class="control-slider">
-              <input type="button" id="slider" class="control-slider-left"/>
-              <input type="button" id="slider" class="control-slider-right"/>
+              <button class="control-slider-button"> <span class="visually-hidden">Стоимость от</span> </button>
+              <button class="control-slider-button"> <span class="visually-hidden">Стоимость до</span> </button>
               <div class="strip"></div>
             </div>
-          </label>
         </div>
         <button class="button" type="submit">Применить</button>
         <button class="button" type="reset">Сбросить</button>
