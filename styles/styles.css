@@ -127,6 +127,16 @@ body {
     color: #FFFFFF;
 }
 
+.advantages-item-square,
+.advantages-item-tourists {
+    background-color: rgba(131, 179, 211, 0.12);
+    ;
+}
+
+.advantages-item-road {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
 .advantages-title-square,
 .advantages-title-road,
 .advantages-title-tourists {
@@ -158,6 +168,15 @@ body {
     text-transform: uppercase;
 }
 
+
+/*ТУТ*/
+
+.services-item-hotel,
+.services-item-souvenirs {
+    background-color: rgba(131, 179, 211, 0.12);
+    ;
+}
+
 .services-title-description {
     font-weight: 400;
     font-size: 22px;
@@ -166,7 +185,9 @@ body {
     color: #333333;
 }
 
-.services-name {
+.services-name-hotel,
+.services-name-food,
+.services-name-souvenirs {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -174,7 +195,9 @@ body {
     text-transform: uppercase;
 }
 
-.services-description {
+.services-description-hotel,
+.services-description-food,
+.services-description-souvenirs {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
