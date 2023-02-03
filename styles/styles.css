@@ -168,13 +168,9 @@ body {
     text-transform: uppercase;
 }
 
-
-/*ТУТ*/
-
 .services-item-hotel,
 .services-item-souvenirs {
     background-color: rgba(131, 179, 211, 0.12);
-    ;
 }
 
 .services-title-description {
@@ -402,7 +398,7 @@ body {
 }
 
 .result-card-price {
-    ont-weight: 400;
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-align: right;
@@ -433,8 +429,6 @@ body {
     background-color: #82B3D3;
     border: none;
 }
-
-.result-card-star {}
 
 .result-card-rate {
     font-weight: 400;
