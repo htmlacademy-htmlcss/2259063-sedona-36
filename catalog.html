@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <title>HTML Academy: Седона - каталог</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
 </head>
 
 <body>
@@ -27,110 +30,113 @@
             </ul>
             <ul class="navigation-list navigation-user">
                 <li class="navigation-item">
-                    <a class="navigation-link-img" href="#">
+                    <a class="navigation-link" href="#">
                         <span class="visually-hidden">Поиск</span>
                     </a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link-img" href="#">
+                    <a class="navigation-link" href="#">
                         <span class="visually-hidden">Избранное</span>
                         <span class="visually-hidden">Количество</span>
                     </a>
                 </li>
-                <li>
-                    <a class="navigation-link" href="#">
-                        <span class="visually-hidden">Хочу сюда!</span>
-                    </a>
+                <li class="navigation-item">
+                    <a class="navigation-link navigation-button" href="#"> Хочу сюда! </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <!--Основа каталога-->
+    <!--ОснSова каталога-->
     <main class="main-inner">
-        <header class="inner-header">
-            <h1 class="inner-header-title">Гостиницы Седоны</h1>
-            <ol class="breadcrumbs">
-                <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="index.html">
-                        <span class="visually-hidden">Главная</span>
-                    </a>
-                </li>
-                <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link">Гостиницы</a>
-                </li>
-            </ol>
-        </header>
-        <!--Параметры для подбора отеля-->
-        <!--Чекбокс - Бассейн Паркова Вай-фай-->
-        <section class="parameters">
-            <h2 class="visually-hidden">Параметры гостиницы</h2>
-            <form class="parameters-filter" action="https://echo.htmlacademy.ru/" method="get">
-                <div class="parameters-filter-infrastructure">
-                    <ul class="parameters-filter-list">
-                        <li class="parameters-filter-item">
-                            <label class="control" for="pool">
-                  <input class="control-input" type="checkbox" id="pool" checked />
-                  Бассейн
-                </label>
-                        </li>
-                        <li class="parameters-filter-item">
-                            <label class="control" for="parking">
-                  <input class="control-input" type="checkbox" id="parking" checked />
-                  Парковка
-                </label>
-                        </li>
-                        <li class="parameters-filter-item">
-                            <label class="control" for="wifi">
-                  <input class="control-input" type="checkbox" id="wifi" />
-                  Wi-Fi
-                </label>
-                        </li>
-                    </ul>
-                </div>
-                <!--Радиокнопки - Гостиница Мотель Аппарты-->
-                <div class="parameters-filter-type">
-                    <ul class="parameters-filter-list">
-                        <li class="parameters-filter-item">
-                            <label class="control" for="hotel">
-                  <input class="control-input" type="radio" id="hotel" value="hotel" name="type-group" checked />
-                  Гостиница
-                </label>
-                        </li>
-                        <li class="parameters-filter-item">
-                            <label class="control" for="motel">
-                  <input class="control-input" type="radio" id="motel" value="motel" name="type-group" />
-                  Мотель
-                </label>
-                        </li>
-                        <li class="parameters-filter-item">
-                            <label class="control" for="appart">
-                  <input class="control-input" type="radio" id="appart" value="appart" name="type-group" />
-                  Апартаменты
-                </label>
-                        </li>
-                    </ul>
-                </div>
-                <!--Ползунок и поля ввода для стоимости-->
-                <div class="parameters-filter-price">
-                    <label class="control" for="min">
-              <input class="control-input" type="text" name="min" id="min" value="0" placeholder="от" />
-            </label>
-                    <label class="control" for="max">
-              <input class="control-input" type="text" name="max" id="max" value="9000" placeholder="до" />
-            </label>
-                    <div class="control-slider">
-                        <button class="control-slider-button">
-                <span class="visually-hidden">Стоимость от</span>
-              </button>
-                        <button class="control-slider-button">
-                <span class="visually-hidden">Стоимость до</span>
-              </button>
-                        <div class="strip"></div>
+        <section class="main-inner-section">
+            <header class="inner-header">
+                <h1 class="inner-header-title">Гостиницы Седоны</h1>
+                <ol class="breadcrumbs">
+                    <li class="breadcrumbs-item">
+                        <a class="breadcrumbs-link" href="index.html">
+                            <span class="visually-hidden">Главная</span>
+                        </a>
+                    </li>
+                    <li class="breadcrumbs-item">
+                        <a class="breadcrumbs-link">Гостиницы</a>
+                    </li>
+                </ol>
+            </header>
+            <!--Параметры для подбора отеля-->
+            <!--Чекбокс - Бассейн Паркова Вай-фай-->
+            <section class="parameters">
+                <h2 class="visually-hidden">Параметры гостиницы</h2>
+                <form class="parameters-filter" action="https://echo.htmlacademy.ru/" method="get">
+                    <div class="parameters-filter-infrastructure">
+                        <p class="parameters-filter-title">Инфраструктура:</p>
+                        <ul class="parameters-filter-list">
+                            <li class="parameters-filter-item">
+                                <label class="control" for="pool">
+                    <input class="control-input" type="checkbox" id="pool" checked />
+                    Бассейн
+                  </label>
+                            </li>
+                            <li class="parameters-filter-item">
+                                <label class="control" for="parking">
+                    <input class="control-input" type="checkbox" id="parking" checked />
+                    Парковка
+                  </label>
+                            </li>
+                            <li class="parameters-filter-item">
+                                <label class="control" for="wifi">
+                    <input class="control-input" type="checkbox" id="wifi" />
+                    Wi-Fi
+                  </label>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <button class="button" type="submit">Применить</button>
-                <button class="button" type="reset">Сбросить</button>
-            </form>
+                    <!--Радиокнопки - Гостиница Мотель Аппарты-->
+                    <div class="parameters-filter-type">
+                        <p class="parameters-filter-title">Тип жилья:</p>
+                        <ul class="parameters-filter-list">
+                            <li class="parameters-filter-item">
+                                <label class="control" for="hotel">
+                    <input class="control-input" type="radio" id="hotel" value="hotel" name="type-group" checked />
+                    Гостиница
+                  </label>
+                            </li>
+                            <li class="parameters-filter-item">
+                                <label class="control" for="motel">
+                    <input class="control-input" type="radio" id="motel" value="motel" name="type-group" />
+                    Мотель
+                  </label>
+                            </li>
+                            <li class="parameters-filter-item">
+                                <label class="control" for="appart">
+                    <input class="control-input" type="radio" id="appart" value="appart" name="type-group" />
+                    Апартаменты
+                  </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Ползунок и поля ввода для стоимости-->
+                    <div class="parameters-filter-price">
+                        <p class="parameters-filter-title">Стоимость, ₽:</p>
+                        <label class="control" for="min">
+                <input class="control-input" type="text" name="min" id="min" value="0" placeholder="от" />
+              </label>
+                        <label class="control" for="max">
+                <input class="control-input" type="text" name="max" id="max" value="9000" placeholder="до" />
+              </label>
+                        <div class="control-slider">
+                            <button class="control-slider-button">
+                  <span class="visually-hidden">Стоимость от</span>
+                </button>
+                            <button class="control-slider-button">
+                  <span class="visually-hidden">Стоимость до</span>
+                </button>
+                            <div class="strip"></div>
+                        </div>
+                    </div>
+                    <button class="button-apply" type="submit">Применить</button>
+                    <button class="button-reset" type="reset">Сбросить</button>
+                </form>
+            </section>
         </section>
         <!--Результат и фильтр по результату-->
         <section class="result">
@@ -157,8 +163,8 @@
                     <img class="result-card-img" src="images/hotel_card_photo/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa." />
                     <p class="result-card-type">Гостиница</p>
                     <p class="result-card-price">От 4000 ₽</p>
-                    <a class="button" href="#">Подробнее</a>
-                    <button class="button">В избранное</button>
+                    <a class="button-details" href="#">Подробнее</a>
+                    <button class="button-like">В избранное</button>
                     <p class="result-card-star">
                         <span class="visually-hidden">Четыре звезды</span>
                     </p>
@@ -169,8 +175,8 @@
                     <img class="result-card-img" src="images/hotel_card_photo/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo." />
                     <p class="result-card-type">Гостиница</p>
                     <p class="result-card-price">От 5000 ₽</p>
-                    <a class="button" href="#">Подробнее</a>
-                    <button class="button">В избранное</button>
+                    <a class="button-details" href="#">Подробнее</a>
+                    <button class="button-like">В избранное</button>
                     <p class="result-card-star">
                         <span class="visually-hidden">Четыре звезды</span>
                     </p>
@@ -181,8 +187,8 @@
                     <img class="result-card-img" src="images/hotel_card_photo/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn." />
                     <p class="result-card-type">Гостиница</p>
                     <p class="result-card-price">От 2500 ₽</p>
-                    <a class="button" href="#">Подробнее</a>
-                    <button class="button">В избранное</button>
+                    <a class="button-details" href="#">Подробнее</a>
+                    <button class="button-like">В избранное</button>
                     <p class="result-card-star">
                         <span class="visually-hidden">Три звезды</span>
                     </p>
@@ -193,8 +199,8 @@
                     <img class="result-card-img" src="images/hotel_card_photo/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn." />
                     <p class="result-card-type">Гостиница</p>
                     <p class="result-card-price">От 1500 ₽</p>
-                    <a class="button" href="#">Подробнее</a>
-                    <button class="button">В избранное</button>
+                    <a class="button-details" href="#">Подробнее</a>
+                    <button class="button-like">В избранное</button>
                     <p class="result-card-star">
                         <span class="visually-hidden">Две звезды</span>
                     </p>
@@ -224,7 +230,7 @@
             </ul>
         </section>
         <!--Подписка-->
-        <section class="subscription">
+        <section class="subscription-catalog">
             <h2 class="subscription-title">Подпишитесь на рассылку</h2>
             <p class="subscription-description">
                 Только полезная информация и никакого спама, честное бойскаутское!
@@ -233,7 +239,7 @@
                 <p class="subscription-form-email">
                     <label class="visually-hidden" for="email">Ваша электронная почта</label>
                     <input type="text" id="email" placeholder="Ваш e-mail" />
-                    <button class="button" type="submit">Записаться</button>
+                    <button class="button-submit" type="submit">Записаться</button>
                 </p>
             </form>
         </section>
@@ -264,7 +270,7 @@
             <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
         <div class="htmlacademy">
-            <img src="images/logo/html_academy_logo.svg" width="115" height="33" alt="HTML Академия" />
+            <img src="images/logo/html_academy_logo.svg" width="115" height="33" alt="HTML Академия." />
             <a class="htmlacademy-logo" href="https://htmlacademy.ru/"><span class="visually-hidden">HTML Академия</span>
         </a>
         </div>
