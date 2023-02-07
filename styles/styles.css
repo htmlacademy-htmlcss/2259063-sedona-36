@@ -51,7 +51,7 @@ body {
     /* УБРАТЬ */
 }
 
-.body-container {
+.body-containter {
     background-color: #FFFFFF;
 }
 
@@ -62,6 +62,8 @@ body {
 
 /* СПРЯТАННЫЕ ЭЛЕМЕНТЫ */
 
+
+/*
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -74,6 +76,7 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+*/
 
 
 /* ГЛАВНАЯ СТРАНИЦА */
@@ -88,10 +91,6 @@ body {
     display: flex;
     width: 1200px;
     margin: 0 auto;
-    outline: 5px solid rgba(78, 255, 90, 0.823);
-    /* УБРАТЬ */
-    outline-offset: -5px;
-    /* УБРАТЬ */
 }
 
 .navigation-list-left {
@@ -99,10 +98,6 @@ body {
     padding: 0;
     width: 459px;
     /*339 + 120px прозапас*/
-    outline: 5px solid rgba(255, 78, 252, 0.823);
-    /* УБРАТЬ */
-    outline-offset: -5px;
-    /* УБРАТЬ */
 }
 
 .navigation-list-right {
@@ -111,10 +106,6 @@ body {
     padding: 0;
     width: 313px;
     /*268+45px прозапас*/
-    outline: 5px solid rgba(255, 78, 252, 0.823);
-    /* УБРАТЬ */
-    outline-offset: -5px;
-    /* УБРАТЬ */
 }
 
 .navigation-link {
@@ -179,10 +170,6 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    outline: 5px solid rgba(255, 78, 252, 0.823);
-    /* УБРАТЬ */
-    outline-offset: -5px;
-    /* УБРАТЬ */
 }
 
 .advantages-photo {
@@ -266,6 +253,17 @@ body {
 
 
 /*index Услуги*/
+
+.services-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.services-item {
+    width: 400px;
+    height: 385px;
+}
 
 .services-title {
     font-weight: 700;
