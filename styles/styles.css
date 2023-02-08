@@ -45,10 +45,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    /* УБРАТЬ */
-    outline-offset: -5px;
-    /* УБРАТЬ */
 }
 
 .body-containter {
@@ -147,7 +143,6 @@ body {
 .sedona-logo {
     display: block;
     margin: 0 auto;
-    vertical-align: baseline;
 }
 
 
@@ -171,12 +166,10 @@ body {
 
 .advantages-photo {
     display: block;
-    vertical-align: baseline;
 }
 
 .advantages-item {
     width: 400px;
-    height: 385px;
 }
 
 .advantages-title {
@@ -259,7 +252,6 @@ body {
 
 .services-item {
     width: 400px;
-    height: 385px;
 }
 
 .services-title {
@@ -274,8 +266,6 @@ body {
 .services-item-souvenirs {
     background-color: rgba(131, 179, 211, 0.12);
 }
-
-.services-item-hotel-food {}
 
 .services-title-description {
     font-weight: 400;
@@ -376,9 +366,9 @@ body {
 
 .page-footer-container {
     display: flex;
+    justify-content: space-between;
     margin: 0 auto;
     width: 1200px;
-    outline: firebrick 4px solid;
 }
 
 .footer-social {
@@ -387,7 +377,6 @@ body {
     padding: 0;
     width: 190px;
     /*142px + 48px прозапас*/
-    outline: rgb(34, 164, 178) 4px solid;
 }
 
 .footer-social-link {
@@ -403,7 +392,6 @@ body {
     margin: 0;
     padding: 0;
     width: 720px;
-    outline: rgb(34, 164, 178) 4px solid;
 }
 
 .contacts-phone {
@@ -421,7 +409,6 @@ body {
     margin: 0;
     margin-left: auto;
     padding: 0;
-    outline: rgb(34, 164, 178) 4px solid;
 }
 
 .htmlacademy-logo {
@@ -551,12 +538,11 @@ body {
 
 .result-card-item {
     width: 340px;
-    height: 438px;
     margin-right: 20px;
 }
 
 .result-card-item:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .result-card-title {
@@ -629,7 +615,7 @@ body {
 }
 
 .pagination-item:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .pagination-link {
