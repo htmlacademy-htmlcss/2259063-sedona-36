@@ -30,20 +30,76 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-size: 22px;
     line-height: 26px;
-    background-color: #ffffff;
+    background-color: #F2F2F2;
     color: #000000;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.body-containter {
+    background-color: #FFFFFF;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+
+/* СПРЯТАННЫЕ ЭЛЕМЕНТЫ */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 
 /* ГЛАВНАЯ СТРАНИЦА */
 
 
+/* Шапка */
+
+
 /* Навигация */
+
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation-list-left {
+    margin: 0;
+    padding: 0;
+    width: 459px;
+    /*339 + 120px прозапас*/
+}
+
+.navigation-list-right {
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    width: 313px;
+    /*268+45px прозапас*/
+}
 
 .navigation-link {
     font-size: 20px;
@@ -77,6 +133,19 @@ body {
 }
 
 
+/* main */
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.sedona-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+
 /* Под index шапкой hero */
 
 .hero {
@@ -87,6 +156,21 @@ body {
 
 
 /* index Преимущества */
+
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantages-photo {
+    display: block;
+}
+
+.advantages-item {
+    width: 400px;
+}
 
 .advantages-title {
     font-weight: 700;
@@ -159,6 +243,16 @@ body {
 
 
 /*index Услуги*/
+
+.services-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.services-item {
+    width: 400px;
+}
 
 .services-title {
     font-weight: 700;
@@ -237,6 +331,7 @@ body {
     background-image: url("../images/photo_index/Subscribe.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
+    color: #FFFFFF;
 }
 
 .subscription-title {
@@ -245,7 +340,6 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     text-align: center;
-    color: #FFFFFF;
 }
 
 .subscription-description {
@@ -253,7 +347,6 @@ body {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
-    color: #FFFFFF;
 }
 
 .button-submit {
@@ -264,13 +357,27 @@ body {
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
     background-color: #82B3D3;
     border: none;
 }
 
 
 /*Подвал*/
+
+.page-footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.footer-social {
+    margin: 0;
+    margin-right: auto;
+    padding: 0;
+    width: 190px;
+    /*142px + 48px прозапас*/
+}
 
 .footer-social-link {
     font-size: 20px;
@@ -281,6 +388,12 @@ body {
     text-align: center;
 }
 
+.contacts {
+    margin: 0;
+    padding: 0;
+    width: 720px;
+}
+
 .contacts-phone {
     font-weight: 400;
     font-size: 40px;
@@ -289,6 +402,13 @@ body {
     text-transform: uppercase;
     color: inherit;
     text-decoration: none;
+}
+
+.htmlacademy {
+    width: 115px;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
 }
 
 .htmlacademy-logo {
@@ -323,6 +443,31 @@ body {
 .breadcrumbs-link {
     color: inherit;
     text-decoration: none;
+}
+
+.parameters-filter {
+    display: flex;
+    outline: rgb(118, 34, 178) 4px solid;
+}
+
+.parameters-filter-infrastructure {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    margin-right: 70px;
+}
+
+.parameters-filter-type {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    margin-right: 140px;
+}
+
+.parameters-filter-price {
+    margin: 0;
+    padding: 0;
+    width: 549px;
 }
 
 .parameters-filter-title {
@@ -384,6 +529,22 @@ body {
 
 /*Результаты. Карточки отелей*/
 
+.result-card-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result-card-item {
+    width: 340px;
+    margin-right: 20px;
+}
+
+.result-card-item:last-child {
+    margin-right: 0;
+}
+
 .result-card-title {
     font-weight: 700;
     font-size: 24px;
@@ -441,6 +602,21 @@ body {
 
 
 /*Пагинация*/
+
+.pagination {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.pagination-item {
+    width: 60px;
+    margin-right: 8px;
+}
+
+.pagination-item:last-child {
+    margin-right: 0;
+}
 
 .pagination-link {
     font-family: inherit;
