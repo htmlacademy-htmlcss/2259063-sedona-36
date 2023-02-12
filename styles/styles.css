@@ -180,6 +180,7 @@ body {
     text-align: center;
     margin-left: 70px;
     margin-right: 28px;
+    position: relative;
 }
 
 
@@ -206,6 +207,10 @@ body {
     transform: translate(0, 51px);
 }
 
+.sedona-logo-footer {
+    transform: translate(0, 76px);
+}
+
 
 /* index Преимущества */
 
@@ -230,6 +235,24 @@ body {
 .advantages-item {
     width: 400px;
     min-height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages-item-container-blue {
+    width: 230px;
+    height: 181px;
+    gap: 30px;
+    display: grid;
+}
+
+.advantages-item-container-grey {
+    width: 230px;
+    height: 160px;
+    gap: 30px;
+    display: grid;
 }
 
 .advantages-title {
@@ -249,6 +272,11 @@ body {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
+    width: 651px;
+    height: 26px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 69px;
 }
 
 .advantages-item-city,
@@ -264,6 +292,7 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: center;
+    margin: 0 auto;
 }
 
 .advantages-description-city,
@@ -273,6 +302,7 @@ body {
     line-height: 21px;
     text-align: center;
     color: #FFFFFF;
+    margin: 0 auto;
 }
 
 .advantages-item-square,
@@ -293,6 +323,9 @@ body {
     line-height: 28px;
     text-transform: uppercase;
     text-align: center;
+    margin: 0 auto;
+    width: 175px;
+    height: 56px;
 }
 
 .advantages-description-square,
@@ -303,10 +336,15 @@ body {
     line-height: 21px;
     text-align: center;
     color: #333333;
+    margin: 0 auto;
 }
 
 
 /*index Услуги*/
+
+.seriveces-header-container {
+    margin: 64px auto;
+}
 
 .services-list {
     margin: 0;
@@ -318,10 +356,22 @@ body {
     padding: 0;
     display: flex;
     list-style-type: none;
+    min-height: 385px;
 }
 
 .services-item {
     width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-item-container {
+    width: 230px;
+    height: 223px;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
 }
 
 .services-title {
@@ -330,6 +380,16 @@ body {
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
+    width: 505px;
+    height: 72px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.services-title-description {
+    width: 490px;
+    height: 26px;
+    margin: 0 auto;
 }
 
 .services-item-hotel,
@@ -343,6 +403,7 @@ body {
     line-height: 26px;
     text-align: center;
     color: #333333;
+    height: 28px;
 }
 
 .services-name-hotel,
@@ -353,6 +414,13 @@ body {
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.services-description {
+    width: 230px;
+    height: 63px;
+    white-space: wrap;
 }
 
 .services-description-hotel,
@@ -362,10 +430,15 @@ body {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+    margin: 0 auto;
 }
 
 
 /* index *Блок "Заинтересовались?"*/
+
+.hotel-search {
+    margin: 96px auto;
+}
 
 .hotel-search-title {
     font-weight: 700;
@@ -380,6 +453,10 @@ body {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
+    width: 592px;
+    height: 52px;
+    margin: 0 auto;
+    margin-bottom: 64px;
 }
 
 .hotel-search-link {
@@ -392,6 +469,12 @@ body {
     text-decoration: none;
     background-color: #756157;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 376px;
+    height: 52px;
+    margin: 0 auto;
 }
 
 
@@ -402,6 +485,12 @@ body {
     background-repeat: no-repeat;
     background-size: 100% auto;
     color: #FFFFFF;
+    height: 414.86px;
+}
+
+.subscription-container-index {
+    margin: 0 auto;
+    margin-top: 96px;
 }
 
 .subscription-title {
@@ -410,12 +499,19 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     text-align: center;
+    margin: 0 auto;
 }
 
 .subscription-description {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.subscription-form-container {
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -429,6 +525,8 @@ body {
     text-transform: uppercase;
     background-color: #82B3D3;
     border: none;
+    margin: 0 auto;
+    color: #FFFFFF;
 }
 
 
