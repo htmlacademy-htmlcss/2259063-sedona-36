@@ -538,7 +538,7 @@ body {
     margin: 0;
     margin-right: auto;
     padding: 0;
-    width: 190px;
+    min-width: 190px;
     /*142px + 48px прозапас*/
 }
 
