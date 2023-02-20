@@ -410,7 +410,8 @@ body {
 
 .services-description {
     width: 230px;
-    height: 63px;
+    min-height: 63px;
+    padding: 0;
 }
 
 .services-description-hotel,
@@ -445,7 +446,7 @@ body {
     text-align: center;
     width: 592px;
     margin: 0 auto;
-    margin-bottom: 64px;
+    margin-bottom: 54px;
 }
 
 .hotel-search-link {
@@ -463,6 +464,7 @@ body {
     justify-content: center;
     width: 376px;
     margin: 0 auto;
+    min-height: 52px;
 }
 
 
@@ -612,7 +614,6 @@ body {
     color: #FFFFFF;
     margin: 0;
     padding: 0;
-    margin-top: 35px;
     margin-bottom: 8px;
     margin-left: 70px;
 }
