@@ -630,24 +630,16 @@ body {
     min-height: 40px;
     padding: 13px 12px;
     margin: 0 auto;
+    position: relative;
 }
 
-.footer-social-item:first-child {
-    background-image: url(../images/social/vk.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.footer-social-item:nth-child(2) {
-    background-image: url(../images/social/telegram.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.footer-social-item:last-child {
-    background-image: url(../images/social/youtube.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+.social-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .contacts {
@@ -655,6 +647,16 @@ body {
     padding: 0;
     width: 720px;
     text-align: center;
+    position: relative;
+}
+
+.contacts-phone-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .contacts-phone {
@@ -668,6 +670,7 @@ body {
     margin-top: 40px;
     display: block;
     margin-bottom: 30px;
+    margin: 0 auto;
 }
 
 .htmlacademy {
@@ -677,13 +680,23 @@ body {
     margin: auto;
 }
 
-.htmlacademy-logo {
+.htmlacademy-link {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
     color: inherit;
     text-decoration: none;
     text-align: center;
+    position: relative;
+}
+
+.html-academy-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 
@@ -719,8 +732,15 @@ body {
 
 .breadcrumbs-link-home {
     display: block;
-    min-width: 13px;
-    min-height: 15px;
+    width: 13px;
+    min-height: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.breadcrumbs-path {
+    display: block;
+    width: 8px;
+    min-height: 20px;
 }
 
 .breadcrumbs-link-current {
@@ -728,6 +748,7 @@ body {
     color: #FFFFFF;
     font-size: 16px;
     line-height: 21px;
+    min-width: 73px;
 }
 
 .breadcrumbs-link {
