@@ -573,6 +573,17 @@ body {
     display: flex;
 }
 
+.subscription-form-email-input {
+    border-radius: 4px 0 0 4px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    border: 0;
+    width: 452px;
+}
+
 .subscription-form-container {
     margin: 0 auto;
     text-align: center;
@@ -592,6 +603,17 @@ body {
     color: #FFFFFF;
     width: 232px;
     border-radius: 4px;
+}
+
+.button-submit {
+    border-radius: 0 4px 4px 0;
+}
+
+.subscription-form-email-input {
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
 
@@ -648,6 +670,8 @@ body {
     width: 720px;
     text-align: center;
     position: relative;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .contacts-phone-logo {
@@ -724,10 +748,18 @@ body {
 
 .breadcrumbs {
     display: flex;
+    gap: 10px;
     margin: 0;
     padding: 0;
     list-style-type: none;
     margin-bottom: 40px;
+    margin-left: 70px;
+}
+
+.breadcrumbs-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .breadcrumbs-link-home {
@@ -735,6 +767,14 @@ body {
     width: 13px;
     min-height: 20px;
     color: rgba(255, 255, 255, 1);
+}
+
+.breadcrumbs-link-home-icon path {
+    fill: #FFFFFF;
+}
+
+.breadcrumbs-link-path-icon path {
+    fill: #FFFFFF;
 }
 
 .breadcrumbs-path {
@@ -749,6 +789,9 @@ body {
     font-size: 16px;
     line-height: 21px;
     min-width: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .breadcrumbs-link {
@@ -843,6 +886,7 @@ body {
 
 .result-header-container {
     display: flex;
+    width: 1060px;
     margin-left: 70px;
     margin-right: 70px;
     align-items: center;
@@ -857,7 +901,13 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     margin: 0;
-    width: 338px;
+    min-width: 338px;
+}
+
+.select-control {
+    width: 292px;
+    margin-left: 200px;
+    margin-right: 70px;
 }
 
 .display-list-container {
@@ -866,19 +916,34 @@ body {
     align-items: center;
 }
 
-.display-list {
-    color: inherit;
-    text-decoration: none;
+.display-button {
     width: 48px;
     height: 48px;
-    outline: 1px solid red;
     display: block;
     margin: 0;
     margin-right: 8px;
 }
 
-.display-list:last-child {
+.display-button:last-child {
     margin-right: 0;
+}
+
+.button-table {
+    background-color: #FFFFFF;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+}
+
+.button-slideshow {
+    background-color: #FFFFFF;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+}
+
+.button-list {
+    background-color: #FFFFFF;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
 }
 
 
@@ -947,12 +1012,24 @@ body {
 
 .result-card-star {
     margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.result-card-star-icon path {
+    fill: #83B3D3;
 }
 
 .result-card-rate {
     margin: 0;
     text-align: center;
-    margin-top: 9px;
+    display: flex;
+    min-height: 37px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 4px;
 }
 
 .button-details {
@@ -1027,23 +1104,39 @@ body {
     font-size: 20px;
     line-height: 36px;
     text-align: center;
-    text-transform: uppercase;
     background-color: #82B3D3;
     min-height: 60px;
     min-width: 60px;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
 }
 
-.pagination-current,
-.pagination-interval {
+.pagination-link-current {
     color: inherit;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
     background-color: #F2F2F2;
     min-height: 60px;
     min-width: 60px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.pagination-interval {
+    color: inherit;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    background-color: inherit;
+    min-height: 60px;
+    min-width: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1081,4 +1174,177 @@ body {
     margin: 0 auto;
     width: 475px;
     margin-bottom: 54px;
+}
+
+
+/* СОСТОЯНИЯ КНОПОК И ССЫЛОК */
+
+
+/* Состояния коричневой кнопки */
+
+.brown-button:hover {
+    background-color: #615048;
+}
+
+.brown-button:focus {
+    background-color: #615048;
+}
+
+.brown-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: #756157;
+}
+
+
+/* Состояния голубой кнопки */
+
+.blue-button:hover {
+    background-color: #68A2CA;
+}
+
+.blue-button:focus {
+    background-color: #68A2CA;
+}
+
+.blue-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: #82B3D3;
+}
+
+
+/* Состояния зеленой кнопки */
+
+.button-like:hover {
+    background-color: #6C9E42;
+}
+
+.button-like:focus {
+    background-color: #6C9E42;
+}
+
+.button-like:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: #7DB54F;
+}
+
+
+/* Состояния прозрачных кнопок */
+
+.button-reset:hover {
+    opacity: 0.6;
+}
+
+.button-reset:focus {
+    border: 3px solid #83B3D3;
+    opacity: 1;
+}
+
+.button-reset:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Состояния хлебных крошек */
+
+.breadcrumbs-link:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+    color: #FFFFFF;
+}
+
+.breadcrumbs-link:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link-home:hover .breadcrumbs-link-home-icon path {
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link-home:focus .breadcrumbs-link-home-icon path {
+    fill: #FFFFFF;
+}
+
+.breadcrumbs-link-home:active .breadcrumbs-link-home-icon path {
+    fill: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Состояния ссылок на соцсети */
+
+.footer-social-link:hover .social-icon path,
+.footer-social-link:focus .social-icon path {
+    fill: #68A2CA;
+}
+
+.footer-social-link:active .social-icon path {
+    fill: rgba(104, 162, 202, 0.3);
+}
+
+
+/* Состояния номера телефона */
+
+.contacts-phone:hover,
+.contacts-phone:focus {
+    color: #756157;
+}
+
+.contacts-phone:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
+
+/* Лого академии футер */
+
+.htmlacademy-link:hover .htmlacademy-link-logo path,
+.htmlacademy-link:focus .htmlacademy-link-logo path {
+    fill: #756157;
+}
+
+.htmlacademy-link:active .htmlacademy-link-logo path {
+    fill: rgba(117, 97, 87, 0.3);
+}
+
+
+/* Поле ввода имэйла */
+
+
+/* Пагинация */
+
+.pagination-link:hover {
+    background-color: #68A2CA;
+    border: 1px solid #82B3D3;
+    box-sizing: border-box;
+}
+
+.pagination-link:focus {
+    background-color: #68A2CA;
+    border: 1px solid #82B3D3;
+    box-sizing: border-box;
+}
+
+.pagination-link:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.display-button:hover {
+    border: 2px solid #000000;
+}
+
+.display-button:focus {
+    border: 2px solid #68A2CA
+}
+
+.display-button:active {
+    border: 2px solid #000000
+}
+
+
+/* Поле ввода имэйла */
+
+.subscription-form-email-input:placeholder-shown {
+    background: #F2F2F2;
+    opacity: 0.6;
 }
