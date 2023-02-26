@@ -95,7 +95,7 @@
                                         <label class="control-infrastructure" for="parking">
                     <input class="control-input visually-hidden" type="checkbox" id="parking" name="parking" checked />
                     <span class="control-mark"><!--<svg class="control-mark-checkbox" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="10" fill="none" viewBox="0 0 13 10"><path fill="#000" d="M11 0 4.5 7.4 1.1 3.5 0 4.7l4.5 5.2 7.7-8.6L11 0Z"/></svg>--></span>
-                    <span class="control-label">Паркова</span>
+                    <span class="control-label">Парковка</span>
                   </label>
                                     </li>
                                     <li class="parameters-filter-item">
@@ -112,21 +112,24 @@
                                 <p class="parameters-filter-title">Тип жилья:</p>
                                 <ul class="parameters-filter-list">
                                     <li class="parameters-filter-item">
-                                        <label class="control" for="hotel">
-                    <input class="control-input" type="radio" id="hotel" value="hotel" name="type-group" checked />
-                    Гостиница
+                                        <label class="control-hotel-type" for="hotel">
+                    <input class="control-input visually-hidden" type="radio" id="hotel" value="hotel" name="hotel" checked />
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                                     </li>
                                     <li class="parameters-filter-item">
-                                        <label class="control" for="motel">
-                    <input class="control-input" type="radio" id="motel" value="motel" name="type-group" />
-                    Мотель
+                                        <label class="control-hotel-type" for="motel">
+                    <input class="control-input visually-hidden" type="radio" id="motel" value="motel" name="hotel" />
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                                     </li>
                                     <li class="parameters-filter-item">
-                                        <label class="control" for="appart">
-                    <input class="control-input" type="radio" id="appart" value="appart" name="type-group" />
-                    Апартаменты
+                                        <label class="control-hotel-type" for="appart">
+                    <input class="control-input visually-hidden" type="radio" id="appart" value="appart" name="hotel" />
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                                     </li>
                                 </ul>

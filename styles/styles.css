@@ -863,9 +863,10 @@ body {
 .control-infrastructure:hover .control-mark {
     background-color: #FFFFFF;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    opacity: 0.6;
 }
 
-.control-infrastructure:focus .control-mark {
+.control-infrastructure .control-mark:focus {
     border: 3px solid #83B3D3;
     border-radius: 4px;
 }
@@ -873,11 +874,11 @@ body {
 .control-infrastructure:active .control-mark {
     background-color: #ffffff;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    opacity: 0.7;
 }
 
-.control-mark {
+.control-infrastructure .control-mark {
     position: absolute;
-    top: 2px;
     left: 0;
     width: 20px;
     height: 20px;
@@ -892,10 +893,54 @@ body {
     position: absolute;
     left: 4px;
     top: 6px;
-    background-image: url(../images/icons/checkbox.svg);
+    background-image: url(../images/icons/checkbox1.svg);
     color: #3F5E72;
     width: 12.2px;
     height: 9.9px;
+}
+
+.control-hotel-type {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+}
+
+.control-hotel-type .control-mark {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.control-hotel-type .control-input[type="radio"]:checked+.control-mark::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background-color: #3F5E72;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.control-hotel-type:hover .control-mark {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    opacity: 0.6;
+}
+
+.control-hotel-type .control-mark:focus {
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.control-hotel-type:active .control-mark {
+    background-color: #ffffff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    opacity: 0.7;
 }
 
 .control-input {
@@ -910,6 +955,7 @@ body {
     padding: 12px 20px;
     box-sizing: border-box;
     background: #F2F2F2;
+    font-weight: 700;
 }
 
 .control-input-min {
@@ -934,7 +980,7 @@ body {
     margin: 0;
     padding: 0;
     margin-left: 70px;
-    margin-bottom: 35px;
+    margin-bottom: 18px;
 }
 
 .button-apply {
