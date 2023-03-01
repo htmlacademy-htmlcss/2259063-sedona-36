@@ -104,6 +104,19 @@ body {
     margin: 0;
     padding: 16px 20px;
     white-space: nowrap;
+    position: relative;
+}
+
+.navigation-link-current::before {
+    display: block;
+    height: 2px;
+    background-color: #756257;
+    content: "";
+    bottom: -8px;
+    position: absolute;
+    width: -webkit-fill-available;
+    left: 16px;
+    right: 16px;
 }
 
 .navigation-list-right {
@@ -867,7 +880,7 @@ body {
 }
 
 .control-infrastructure .control-mark:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
     border-radius: 4px;
 }
 
@@ -933,8 +946,7 @@ body {
 }
 
 .control-hotel-type .control-mark:focus {
-    border: 3px solid #83B3D3;
-    border-radius: 4px;
+    outline: 3px solid #83B3D3;
 }
 
 .control-hotel-type:active .control-mark {
@@ -943,8 +955,24 @@ body {
     opacity: 0.7;
 }
 
+.control-filter {
+    position: relative;
+}
+
 .control-input {
     margin-right: 16px;
+}
+
+.control-input-placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    opacity: 0.5;
+    position: absolute;
+    top: 44px;
+    z-index: 1;
+    right: 20px;
 }
 
 .control-input-min,
@@ -969,6 +997,61 @@ body {
 .control-slider {
     grid-column: 1/-1;
     margin-top: 36px;
+    position: relative;
+}
+
+.strip {
+    height: 4px;
+    display: flex;
+}
+
+.strip-white {
+    width: 206px;
+    height: 4px;
+    background-color: #f2f2f2;
+}
+
+.strip-grey {
+    width: 81px;
+    height: 4px;
+    background-color: #f2f2f2;
+    opacity: 0.5;
+}
+
+.control-slider-button:first-of-type,
+.control-slider-button:last-of-type {
+    width: 20px;
+    height: 20px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.control-slider-button:last-of-type {
+    position: absolute;
+    left: 206px;
+    top: 23px;
+}
+
+.control-slider-button:first-of-type {
+    top: 12px;
+    position: relative;
+}
+
+.control-slider-button:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.control-slider-button:focus {
+    outline: 3px solid #83B3D3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.control-slider-button:active {
+    outline: 2px solid #83B3D3;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .buttons-apply-reset-container {
@@ -1038,10 +1121,40 @@ body {
     min-width: 338px;
 }
 
-.select-control {
+.select-control-container {
+    position: relative;
+    display: flex;
+    align-items: center;
     width: 292px;
     margin-left: 200px;
     margin-right: 70px;
+}
+
+.select-control {
+    appearance: none;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+    padding: 14px 20px;
+    font-size: 18px;
+    line-height: 21px;
+    width: 100%;
+    background-image: url(../images/icons/Vector.png);
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+}
+
+.select-control:hover,
+.select-control:focus {
+    border: 2px solid #68A2CA;
+}
+
+.select-control:active {
+    border: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .display-list-container {
@@ -1378,6 +1491,17 @@ body {
 }
 
 
+/*Состояния неактивных кнопок*/
+
+.brown-button:disabled,
+.blue-button:disabled,
+.button-like:disabled,
+.button-reset:disabled {
+    background-color: #E5E5E5;
+    color: #FFFFFF;
+}
+
+
 /* Состояния хлебных крошек */
 
 .breadcrumbs-link:hover {
@@ -1481,4 +1605,181 @@ body {
 .subscription-form-email-input:placeholder-shown {
     background: #F2F2F2;
     opacity: 0.6;
+}
+
+
+/* Модальное окно */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 64px 70px;
+    background-color: #ffffff;
+}
+
+.modal-search {
+    width: 577px;
+    display: flex;
+}
+
+.modal-title {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 64px;
+    text-transform: uppercase;
+}
+
+.modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 64px;
+    right: 52px;
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    background-image: url("../images/icons/modal_close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.modal-close-button:hover {
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+    outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+    background-color: #E6E6E6;
+    opacity: 0.3;
+}
+
+.field-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-label {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.check-form {
+    width: 398px;
+    margin-left: auto;
+    margin-bottom: 4px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    border: none;
+}
+
+.check-form[value] {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 12px 20px;
+}
+
+.check-in-text {
+    color: #FF5757;
+}
+
+.check-in-text,
+.check-out-text {
+    display: block;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: 157px;
+    margin-right: auto;
+    margin-bottom: 23px;
+}
+
+.field-group-quaintity {
+    display: flex;
+    gap: 88px;
+    margin-bottom: 48px;
+}
+
+.quantity-container {
+    display: flex;
+}
+
+.quantity-container .form-label {
+    margin-right: 46px;
+}
+
+.quantity-panel {
+    width: 110px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    display: flex;
+}
+
+.quantity {
+    width: 31px;
+    background-color: #F2F2F2;
+}
+
+.bt_minus,
+.bt_plus,
+.quantity {
+    border: none;
+}
+
+.bt_minus,
+.bt_plus {
+    width: 40px;
+}
+
+.quantity[value] {
+    text-align: center;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.modal-find {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: #83B3D3;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+    width: 577px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

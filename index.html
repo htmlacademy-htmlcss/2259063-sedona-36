@@ -235,6 +235,49 @@
                 </div>
             </div>
         </footer>
+        <div class="modal-container">
+            <div class="modal modal-search">
+                <button class="modal-close-button">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+                <section class="modal-content">
+                    <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+                    <form class="check-in-form" method="post" action="https://echo.htmlacademy.ru/">
+                        <div class="field-group">
+                            <label class="form-label" for="check-in-date">Дата заезда:</label>
+                            <input class="check-form" type="text" id="check-in-date" name="check-in-date" value="27 апреля 2020">
+                            <span class="check-in-text">Мы не можем отправить вас в прошлое.</span>
+                        </div>
+                        <div class="field-group">
+                            <label class="form-label" for="check-out-date">Дата выезда:</label>
+                            <input class="check-form" type="text" id="check-out-date" name="check-out-date" value="1 сентября 2023">
+                            <span class="check-out-text">На эти даты есть свободные номера. Пока есть.</span>
+                        </div>
+                        <div class="field-group-quaintity">
+                            <div class="quantity-container">
+                                <span class="form-label">Взрослые:</span>
+                                <div class="quantity-panel">
+                                    <button class="bt_minus" type="button">-</button>
+                                    <input type="text" class="quantity" name="quantity-adults" value="2">
+                                    <button class="bt_plus" type="button">+</button>
+                                </div>
+                            </div>
+                            <div class="quantity-container">
+                                <span class="form-label form-children">Дети:</span>
+                                <div class="quantity-panel">
+                                    <button class="bt_minus" type="button">-</button>
+                                    <input type="text" class="quantity" name="quantity-children" value="2">
+                                    <button class="bt_plus" type="button">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="modal-find blue-button" href="catalog.html">
+                          Найти
+                      </a>
+                    </form>
+                </section>
+            </div>
+        </div>
     </div>
 </body>
 
