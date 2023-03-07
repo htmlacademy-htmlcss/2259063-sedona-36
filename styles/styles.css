@@ -99,15 +99,21 @@ body {
     width: 464px;
     flex-wrap: wrap;
     margin-left: 126px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     /*+125px запас*/
 }
 
 .navigation-item-left {
     margin: 0;
     padding: 16px 20px;
+    padding-top: 18px;
     white-space: nowrap;
     position: relative;
+}
+
+.navigation-item-left:first-child {
+    padding-right: 15px;
+    padding-left: 25px;
 }
 
 .navigation-link-current::before {
@@ -173,7 +179,7 @@ body {
     border-radius: 50%;
     transform-origin: 100% 0;
     position: relative;
-    transform: translate(10px, -10px);
+    transform: translate(8px, -13px);
 }
 
 .amount {
@@ -607,6 +613,7 @@ body {
     line-height: 24px;
     border: 0;
     width: 452px;
+    box-sizing: border-box;
 }
 
 .subscription-form-container {
@@ -639,17 +646,19 @@ body {
 
 /*Подвал*/
 
+.page-footer-catalog {
+    margin-top: 60px;
+}
+
 .page-footer-container {
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
     width: 1200px;
-    min-height: 120px;
+    margin: 40px 70px 30px 67px;
+    min-height: 50px;
 }
 
 .footer-social {
     margin: 0;
-    margin-right: auto;
     padding: 0;
     min-width: 190px;
     /*142px + 48px прозапас*/
@@ -659,9 +668,7 @@ body {
     display: flex;
     list-style-type: none;
     margin: 0 auto;
-    margin-top: 45px;
     padding: 0;
-    margin-left: 70px;
 }
 
 .footer-social-link {
@@ -678,8 +685,12 @@ body {
     position: relative;
 }
 
-.footer-social-item {
+.footer-social-item:first-child {
     padding: 13px 15px;
+}
+
+.footer-social-item:not(:first-child) {
+    padding: 13px 15px 13px 8px;
 }
 
 .social-icon {
@@ -697,8 +708,6 @@ body {
     width: 720px;
     text-align: center;
     position: relative;
-    margin-top: 40px;
-    margin-bottom: 30px;
 }
 
 .contacts-phone-logo {
@@ -728,7 +737,8 @@ body {
     width: 115px;
     padding: 0;
     display: block;
-    margin: auto;
+    margin-top: 5px;
+    margin-left: 34px;
 }
 
 .htmlacademy-link {
@@ -739,6 +749,10 @@ body {
     text-decoration: none;
     text-align: center;
     position: relative;
+}
+
+.htmlacademy-link-logo {
+    display: block;
 }
 
 .html-academy-logo {
@@ -763,7 +777,7 @@ body {
     color: #FFFFFF;
     margin: 0;
     padding: 0;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     margin-left: 70px;
     padding-top: 35px;
 }
@@ -1000,9 +1014,13 @@ body {
     box-sizing: border-box;
     background: #F2F2F2;
     font-weight: 700;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
 }
 
-.control-input-min {
+.control-input-max .control-input-min {
     border-radius: 4px 0 0 4px;
 }
 
@@ -1012,7 +1030,7 @@ body {
 
 .control-slider {
     grid-column: 1/-1;
-    margin-top: 36px;
+    margin-top: 45px;
     position: relative;
 }
 
@@ -1127,8 +1145,8 @@ body {
     margin-left: 70px;
     margin-right: 70px;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 41px;
+    margin-top: 45px;
+    margin-bottom: 37px;
     justify-content: space-between;
 }
 
@@ -1314,9 +1332,10 @@ body {
     border: none;
     display: block;
     margin: 0 auto;
-    width: 130px;
     border-radius: 4px;
     padding: 8px;
+    box-sizing: border-box;
+    width: 140px;
 }
 
 .button-like {
@@ -1430,7 +1449,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
-    margin-top: 96px;
+    margin-top: 152px;
     margin-bottom: 20px;
 }
 
@@ -1441,7 +1460,7 @@ body {
     text-align: center;
     margin: 0 auto;
     width: 475px;
-    margin-bottom: 54px;
+    margin-bottom: 33px;
 }
 
 
