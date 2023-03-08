@@ -325,7 +325,7 @@ body {
     height: 2px;
     display: block;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.3)
+    background-color: rgba(255, 255, 255, 0.advantages-description3)
 }
 
 .advantages-title {
@@ -337,6 +337,7 @@ body {
     width: 620px;
     margin: 0 auto;
     margin-top: 67px;
+    letter-spacing: -0.2px;
 }
 
 .advantages-description {
@@ -348,6 +349,7 @@ body {
     margin: 0 auto;
     margin-top: 25px;
     margin-bottom: 85px;
+    white-space: nowrap;
 }
 
 .advantages-item-photo-city {
@@ -415,6 +417,10 @@ body {
     text-align: center;
     color: #333333;
     margin: 0 auto;
+}
+
+.advantages-description-road {
+    min-width: 232px;
 }
 
 
