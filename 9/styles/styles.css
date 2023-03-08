@@ -53,6 +53,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-container {
@@ -97,14 +98,22 @@ body {
     align-items: center;
     width: 464px;
     flex-wrap: wrap;
+    margin-left: 126px;
+    margin-bottom: 4px;
     /*+125px запас*/
 }
 
 .navigation-item-left {
     margin: 0;
     padding: 16px 20px;
+    padding-top: 18px;
     white-space: nowrap;
     position: relative;
+}
+
+.navigation-item-left:first-child {
+    padding-right: 15px;
+    padding-left: 25px;
 }
 
 .navigation-link-current::before {
@@ -112,7 +121,7 @@ body {
     height: 2px;
     background-color: #756257;
     content: "";
-    bottom: -8px;
+    bottom: -4px;
     position: absolute;
     width: -webkit-fill-available;
     left: 16px;
@@ -132,6 +141,8 @@ body {
 
 .navigation-item-right {
     width: 44px;
+    margin-left: 8px;
+    margin-top: 4px;
 }
 
 .navigation-link-right {
@@ -143,9 +154,9 @@ body {
     text-decoration: none;
     text-align: center;
     text-transform: capitalize;
-    min-width: 20px;
-    min-height: 20px;
-    padding: 22px 12px;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
 }
 
 .navigation-item-right:first-child {
@@ -168,7 +179,7 @@ body {
     border-radius: 50%;
     transform-origin: 100% 0;
     position: relative;
-    transform: translate(8px, -11px);
+    transform: translate(8px, -13px);
 }
 
 .amount {
@@ -195,6 +206,7 @@ body {
     display: block;
     width: 180px;
     margin-left: 20px;
+    margin-top: 4px;
 }
 
 .navigation-link-right-button {
@@ -226,6 +238,10 @@ body {
     margin-right: 28px;
     position: relative;
     cursor: pointer;
+}
+
+.navigation-link-img img {
+    position: absolute;
 }
 
 
@@ -309,7 +325,7 @@ body {
     height: 2px;
     display: block;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.3)
+    background-color: rgba(255, 255, 255, 0.advantages-description3)
 }
 
 .advantages-title {
@@ -320,7 +336,8 @@ body {
     text-align: center;
     width: 620px;
     margin: 0 auto;
-    margin-top: 69px;
+    margin-top: 67px;
+    letter-spacing: -0.2px;
 }
 
 .advantages-description {
@@ -331,7 +348,8 @@ body {
     width: 651px;
     margin: 0 auto;
     margin-top: 25px;
-    margin-bottom: 69px;
+    margin-bottom: 85px;
+    letter-spacing: -0.1px;
 }
 
 .advantages-item-photo-city {
@@ -399,6 +417,10 @@ body {
     text-align: center;
     color: #333333;
     margin: 0 auto;
+}
+
+.advantages-description-road {
+    min-width: 232px;
 }
 
 
@@ -581,22 +603,23 @@ body {
     text-align: center;
     margin: 0 auto;
     width: 475px;
-    margin-bottom: 54px;
+    margin-bottom: 30px;
 }
 
 .subscription-form-email {
     display: flex;
+    width: 684px;
 }
 
 .subscription-form-email-input {
     border-radius: 4px 0 0 4px;
     font-family: 'PT Sans';
     font-style: normal;
-    font-weight: 700;
     font-size: 18px;
     line-height: 24px;
     border: 0;
     width: 452px;
+    box-sizing: border-box;
 }
 
 .subscription-form-container {
@@ -629,16 +652,19 @@ body {
 
 /*Подвал*/
 
+.page-footer-catalog {
+    margin-top: 60px;
+}
+
 .page-footer-container {
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
     width: 1200px;
+    margin: 40px 70px 30px 67px;
+    min-height: 50px;
 }
 
 .footer-social {
     margin: 0;
-    margin-right: auto;
     padding: 0;
     min-width: 190px;
     /*142px + 48px прозапас*/
@@ -647,6 +673,8 @@ body {
 .footer-social-list {
     display: flex;
     list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .footer-social-link {
@@ -658,11 +686,17 @@ body {
     text-align: center;
     display: block;
     text-transform: capitalize;
-    min-width: 47px;
-    min-height: 40px;
-    padding: 13px 12px;
-    margin: 0 auto;
+    min-width: 24px;
+    min-height: 17px;
     position: relative;
+}
+
+.footer-social-item:first-child {
+    padding: 13px 15px;
+}
+
+.footer-social-item:not(:first-child) {
+    padding: 13px 15px 13px 8px;
 }
 
 .social-icon {
@@ -680,8 +714,6 @@ body {
     width: 720px;
     text-align: center;
     position: relative;
-    margin-top: 40px;
-    margin-bottom: 30px;
 }
 
 .contacts-phone-logo {
@@ -711,7 +743,8 @@ body {
     width: 115px;
     padding: 0;
     display: block;
-    margin: auto;
+    margin-top: 5px;
+    margin-left: 34px;
 }
 
 .htmlacademy-link {
@@ -722,6 +755,10 @@ body {
     text-decoration: none;
     text-align: center;
     position: relative;
+}
+
+.htmlacademy-link-logo {
+    display: block;
 }
 
 .html-academy-logo {
@@ -746,8 +783,9 @@ body {
     color: #FFFFFF;
     margin: 0;
     padding: 0;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     margin-left: 70px;
+    padding-top: 35px;
 }
 
 .main-inner-section {
@@ -970,7 +1008,6 @@ body {
     opacity: 0.5;
     position: absolute;
     top: 44px;
-    z-index: 1;
     right: 20px;
 }
 
@@ -983,9 +1020,13 @@ body {
     box-sizing: border-box;
     background: #F2F2F2;
     font-weight: 700;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
 }
 
-.control-input-min {
+.control-input-max .control-input-min {
     border-radius: 4px 0 0 4px;
 }
 
@@ -995,7 +1036,7 @@ body {
 
 .control-slider {
     grid-column: 1/-1;
-    margin-top: 36px;
+    margin-top: 45px;
     position: relative;
 }
 
@@ -1110,8 +1151,8 @@ body {
     margin-left: 70px;
     margin-right: 70px;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 41px;
+    margin-top: 45px;
+    margin-bottom: 37px;
     justify-content: space-between;
 }
 
@@ -1297,9 +1338,10 @@ body {
     border: none;
     display: block;
     margin: 0 auto;
-    width: 130px;
     border-radius: 4px;
     padding: 8px;
+    box-sizing: border-box;
+    width: 140px;
 }
 
 .button-like {
@@ -1413,7 +1455,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
-    margin-top: 96px;
+    margin-top: 152px;
     margin-bottom: 20px;
 }
 
@@ -1424,7 +1466,7 @@ body {
     text-align: center;
     margin: 0 auto;
     width: 475px;
-    margin-bottom: 54px;
+    margin-bottom: 33px;
 }
 
 
@@ -1608,7 +1650,6 @@ body {
 
 .subscription-form-email-input:placeholder-shown {
     background: #F2F2F2;
-    opacity: 0.6;
 }
 
 
@@ -1624,6 +1665,10 @@ body {
     background-color: rgba(242, 242, 242, 0.8);
 }
 
+.modal-container-closed {
+    display: none;
+}
+
 .modal {
     position: relative;
     margin: auto;
@@ -1631,16 +1676,16 @@ body {
     background-color: #ffffff;
 }
 
-.modal-information-container {
+.tooltip-information-container {
     position: absolute;
     width: 256px;
     z-index: 1;
-    top: 399px;
-    left: 348px;
-    display: block;
+    top: 32px;
+    left: -116px;
+    display: none;
 }
 
-.modal-information-triangle {
+.tooltip-information-triangle {
     width: 0;
     height: 0;
     border-left: 9.5px solid transparent;
@@ -1650,13 +1695,13 @@ body {
     padding: 0;
 }
 
-.modal-information-field {
+.tooltip-information-field {
     background-color: #333333;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
-.modal-information-description {
+.tooltip-information-description {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
@@ -1672,6 +1717,8 @@ body {
 .modal-search {
     width: 577px;
     display: flex;
+    box-shadow: 0 25px 50px rgb(0 0 0 / 15%);
+    border-radius: 30px;
 }
 
 .modal-title {
@@ -1801,6 +1848,7 @@ body {
 
 .quantity-container {
     display: flex;
+    position: relative;
 }
 
 .quantity-container .form-label {
@@ -1870,9 +1918,20 @@ body {
     border-radius: 4px;
 }
 
+.bt_minus:focus path,
+.bt_plus:focus path {
+    fill: #000000;
+    fill-opacity: 1;
+}
+
+.bt_minus:active .button-border,
+.bt_plus:active .button-border {
+    outline: none;
+}
+
 .bt_minus:active path,
 .bt_plus:active path {
-    fill: #756157;
+    fill: currentColor;
     fill-opacity: 0.3;
 }
 
@@ -1896,6 +1955,17 @@ body {
     height: 26px;
     position: absolute;
     transform: translateX(10px);
+}
+
+.tooltip-active {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    transform: translate(58px, 12px);
+}
+
+.tooltip-active:hover .tooltip-information-container {
+    display: block;
 }
 
 .modal-find {
