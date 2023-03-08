@@ -349,7 +349,7 @@ body {
     margin: 0 auto;
     margin-top: 25px;
     margin-bottom: 85px;
-    white-space: nowrap;
+    letter-spacing: -0.1px;
 }
 
 .advantages-item-photo-city {
