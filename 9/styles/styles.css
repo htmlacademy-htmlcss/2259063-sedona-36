@@ -647,6 +647,7 @@ body {
 .subscription-form-email-input {
     margin: 0;
     padding: 14px 20px;
+    background-color: #F2F2F2;
 }
 
 
@@ -1026,7 +1027,22 @@ body {
     line-height: 24px;
 }
 
-.control-input-max .control-input-min {
+.control-input-min:not(:placeholder-shown),
+.control-input-max:not(:placeholder-shown) {
+    outline: 2px solid #000000;
+}
+
+.control-input-min:hover,
+.control-input-max:hover {
+    background-color: #E6E6E6;
+}
+
+.control-input-min:focus,
+.control-input-max:focus {
+    outline: 3px solid #83B3D3;
+}
+
+.control-input-min {
     border-radius: 4px 0 0 4px;
 }
 
@@ -1648,8 +1664,21 @@ body {
 
 /* Поле ввода имэйла */
 
+.subscription-form-email-input:not(:placeholder-shown) {
+    outline: 2px solid #000000;
+    background-color: #F2F2F2;
+}
+
+.subscription-form-email-input:hover {
+    background-color: #E6E6E6;
+}
+
+.subscription-form-email-input:focus {
+    outline: 3px solid #83B3D3;
+}
+
 .subscription-form-email-input:placeholder-shown {
-    background: #F2F2F2;
+    background-color: #F2F2F2;
 }
 
 
@@ -1806,14 +1835,17 @@ body {
     padding: 12px 20px;
 }
 
-.check-form:hover {
+.check-form::placeholder {
+    color: #000000;
     opacity: 0.6;
+}
+
+.check-form:hover {
     background-color: #E6E6E6;
     outline: none;
 }
 
 .check-form:focus {
-    opacity: 0.6;
     background-color: #E6E6E6;
     outline: 3px solid #83B3D3;
 }
