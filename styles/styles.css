@@ -1027,8 +1027,8 @@ body {
     line-height: 24px;
 }
 
-.control-input-min:not(:placeholder-shown),
-.control-input-max:not(:placeholder-shown) {
+.control-input-min:not(:placeholder-shown):focus,
+.control-input-max:not(:placeholder-shown):focus {
     outline: 2px solid #000000;
 }
 
@@ -1664,7 +1664,7 @@ body {
 
 /* Поле ввода имэйла */
 
-.subscription-form-email-input:not(:placeholder-shown) {
+.subscription-form-email-input:not(:placeholder-shown):focus {
     outline: 2px solid #000000;
     background-color: #F2F2F2;
 }
@@ -1855,7 +1855,7 @@ body {
     outline: 2px solid #000000;
 }
 
-.check-form:not(:placeholder-shown) {
+.check-form:not(:placeholder-shown):focus {
     background: #F2F2F2;
     outline: 2px solid #000000;
     opacity: 1;
