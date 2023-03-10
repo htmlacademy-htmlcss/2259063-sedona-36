@@ -98,7 +98,7 @@ body {
     align-items: center;
     width: 464px;
     flex-wrap: wrap;
-    margin-left: 126px;
+    margin-left: -14px;
     margin-bottom: 4px;
     /*+125px запас*/
 }
@@ -109,10 +109,12 @@ body {
     padding-top: 18px;
     white-space: nowrap;
     position: relative;
+    padding-right: 15px;
+    padding-left: 25px;
 }
 
-.navigation-item-left:first-child {
-    padding-right: 15px;
+.navigation-item-left:nth-child(2) {
+    padding-right: 8px;
     padding-left: 25px;
 }
 
@@ -124,8 +126,8 @@ body {
     bottom: -4px;
     position: absolute;
     width: -webkit-fill-available;
-    left: 16px;
-    right: 16px;
+    left: 25px;
+    right: 15px;
 }
 
 .navigation-list-right {
@@ -157,6 +159,7 @@ body {
     width: 20px;
     height: 20px;
     margin: 0 auto;
+    border-radius: 4px;
 }
 
 .navigation-item-right:first-child {
@@ -238,6 +241,7 @@ body {
     margin-right: 28px;
     position: relative;
     cursor: pointer;
+    height: 64px;
 }
 
 .navigation-link-img img {
@@ -259,6 +263,7 @@ body {
     background-image: url("../images/photo_index/index_background.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
+    background-color: #F2F2F2;
 }
 
 .sedona-logo {
@@ -301,31 +306,35 @@ body {
 .advantages-item-container-blue {
     width: 230px;
     min-height: 181px;
-    gap: 30px;
+    gap: 60px;
     display: grid;
+    position: relative;
 }
 
 .advantages-item-container-grey {
     width: 230px;
     min-height: 160px;
-    gap: 30px;
+    gap: 60px;
     display: grid;
+    position: relative;
 }
 
-.line {
-    width: 68px;
+.advantages-item-container-blue::after,
+.advantages-item-container-grey::after {
+    content: "";
+    position: absolute;
+    width: 60px;
     height: 2px;
-    display: block;
-    margin: 0 auto;
+    left: 85px;
+    top: 86px;
+}
+
+.advantages-item-container-blue::after {
+    background-color: rgba(255, 255, 255, 0.3)
+}
+
+.advantages-item-container-grey::after {
     background-color: rgba(0, 0, 0, 0.3);
-}
-
-.advantages-item-container-blue:first-child .line {
-    width: 68px;
-    height: 2px;
-    display: block;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.advantages-description3)
 }
 
 .advantages-title {
@@ -336,7 +345,7 @@ body {
     text-align: center;
     width: 620px;
     margin: 0 auto;
-    margin-top: 67px;
+    margin-top: 68px;
     letter-spacing: -0.2px;
 }
 
@@ -576,13 +585,14 @@ body {
 /*index Блок подписки*/
 
 .subscription-index {
-    background-image: url("../images/photo_index/Subscribe.jpg");
+    background-image: url("../images/photo_index/subscribe.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     color: #FFFFFF;
     min-height: 415px;
     display: flex;
     flex-direction: column;
+    background-color: #F2F2F2;
 }
 
 .subscription-title {
@@ -667,15 +677,17 @@ body {
 .footer-social {
     margin: 0;
     padding: 0;
-    min-width: 190px;
-    /*142px + 48px прозапас*/
+    width: 282px;
+    align-self: center;
 }
 
 .footer-social-list {
-    display: flex;
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
+    display: grid;
+    grid-template-columns: 47px 47px 47px 47px 47px 47px;
+    grid-template-rows: 40px 40px;
 }
 
 .footer-social-link {
@@ -692,12 +704,8 @@ body {
     position: relative;
 }
 
-.footer-social-item:first-child {
-    padding: 13px 15px;
-}
-
-.footer-social-item:not(:first-child) {
-    padding: 13px 15px 13px 8px;
+.footer-social-item {
+    padding: 12px 13px;
 }
 
 .social-icon {
@@ -712,7 +720,7 @@ body {
 .contacts {
     margin: 0;
     padding: 0;
-    width: 720px;
+    width: 525px;
     text-align: center;
     position: relative;
 }
@@ -745,7 +753,7 @@ body {
     padding: 0;
     display: block;
     margin-top: 5px;
-    margin-left: 34px;
+    margin-left: 140px;
 }
 
 .htmlacademy-link {
@@ -793,6 +801,7 @@ body {
     background-image: url("../images/filter.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
+    background-color: #F2F2F2;
 }
 
 .breadcrumbs {
@@ -1198,10 +1207,13 @@ body {
     font-size: 18px;
     line-height: 21px;
     width: 100%;
-    background-image: url(../images/icons/Vector.png);
-    background-repeat: no-repeat;
-    background-position: right 16px center;
     cursor: pointer;
+    background-color: #ffffff;
+}
+
+.select-control-vector {
+    position: absolute;
+    left: 260px;
 }
 
 .select-control:hover,
@@ -1487,6 +1499,54 @@ body {
 
 
 /* СОСТОЯНИЯ КНОПОК И ССЫЛОК */
+
+
+/* Состояния лого Седоны в навигации*/
+
+.navigation-logo:hover path:disabled {
+    opacity: 0.2;
+}
+
+.navigation-logo:hover path,
+.navigation-logo:focus path {
+    opacity: 0.8;
+}
+
+.navigation-logo:active path {
+    filter: brightness(120%);
+}
+
+
+/*Состояния левого блока в навигации*/
+
+.navigation-link-left:disabled {
+    opacity: 0.2;
+}
+
+.navigation-link-left:hover,
+.navigation-link-left:focus {
+    color: #756157;
+}
+
+.navigation-link-left:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
+
+/*Состояния Правого блока в навигации*/
+
+.navigation-item-right:disabled {
+    opacity: 0.2;
+}
+
+.navigation-item-right:hover,
+.navigation-item-right:focus {
+    transform: scale(1.2);
+}
+
+.navigation-item-right:active {
+    opacity: 0.5;
+}
 
 
 /* Состояния коричневой кнопки */
