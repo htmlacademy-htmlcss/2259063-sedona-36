@@ -272,6 +272,15 @@ body {
     transform: translate(0, 51px);
 }
 
+.hero::after {
+    content: "";
+    background-image: url(../images/photo_index/ladder.svg);
+    width: 1200px;
+    height: 57px;
+    display: block;
+    margin-top: 77px;
+}
+
 .sedona-logo-footer {
     margin: 0;
     margin-top: 76px;
@@ -357,7 +366,7 @@ body {
     width: 651px;
     margin: 0 auto;
     margin-top: 25px;
-    margin-bottom: 85px;
+    margin-bottom: 88px;
     letter-spacing: -0.1px;
 }
 
@@ -1517,7 +1526,7 @@ body {
 }
 
 
-/*Состояния левого блока в навигации*/
+/*cостояния левого блока в навигации*/
 
 .navigation-link-left:disabled {
     opacity: 0.2;
