@@ -263,7 +263,7 @@ body {
     background-image: url("../images/photo_index/index_background.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-color: #F2F2F2;
+    background-color: #3d7da9;
 }
 
 .sedona-logo {
@@ -601,7 +601,7 @@ body {
     min-height: 415px;
     display: flex;
     flex-direction: column;
-    background-color: #F2F2F2;
+    background-color: #2f392f;
 }
 
 .subscription-title {
@@ -810,7 +810,7 @@ body {
     background-image: url("../images/filter.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-color: #F2F2F2;
+    background-color: #2f392f;
 }
 
 .breadcrumbs {
